@@ -1,0 +1,47 @@
+.detail-right{
+  border-right: 1px dashed var(--gray);
+  padding: 1rem;
+  width: 40%;
+  text-align: center;
+}
+
+.detail-right img{
+  width: 40%;
+  border-radius: 50%;
+}
+
+.detail-right h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.detail-right h2 span{
+  color: var(--red);
+}
+
+.personal-info{
+  text-align: left;
+}
+
+.detail-right p{
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.info-box{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-box{
+  padding:5px 5px 10px 5px;
+  border-bottom: 1px dashed var(--gray);
+}
+
+.btn{
+  margin-top: 1rem;
+}
+
+

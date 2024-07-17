@@ -1,0 +1,47 @@
+
+.about-left{
+  padding: 30px;
+  text-align: left;
+  color: white;
+  width: 60%;
+  overflow-x: auto;
+}
+
+.about-left h3{
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed var(--gray);
+  margin-bottom: 1.8rem;
+}
+
+.about-left p{
+  text-align: justify;
+  font-size: 1rem;
+  color: var(--gray);
+  line-height: 1.7rem;
+  letter-spacing: 0.2px;
+  font-family: var(--secondary-font);
+  margin-bottom: 2rem;
+}
+
+.qaulity-services{
+  margin-bottom: 2rem;
+}
+
+.programming-language p{
+  margin-bottom: 0.5rem;
+}
+
+.qaulity-services ul li{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.languages{
+  display: flex;
+  justify-content: space-between;
+}
+
+.language p{
+  text-align: center;
+}

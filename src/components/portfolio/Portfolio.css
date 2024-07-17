@@ -1,0 +1,45 @@
+.portfolio {
+  padding: 2rem 0;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--red);
+  position: absolute;
+  top: 60%;
+  transform: translateY(-60%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+
+@media (max-width: 1024px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    left: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    left: 15px;
+    right: 15px;
+  }
+}
