@@ -1,0 +1,52 @@
+@import url('../components/../../global.css');
+
+.contact-form {
+  text-align: left;
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+    "name email"
+    "message message"
+    "button button";
+}
+
+.contact-form input[type="text"] {
+  grid-area: name;
+}
+
+.contact-form input[type="email"] {
+  grid-area: email;
+}
+
+.contact-form textarea {
+  grid-area: message;
+  grid-column: span 2;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.send-message-btn {
+  grid-area: button;
+  grid-column: span 2;
+  width: 50%;
+}
+
+input, textarea {
+  font-family: var(--primary-font);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--black);
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+  color: white;
+}
+
+textarea{
+  height: 100%;
+}
+

@@ -1,0 +1,45 @@
+.card-container {
+  margin-top: 2rem;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius:  10px;
+  cursor: pointer;  
+}
+
+.card-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.card-info{
+  position: absolute;
+  bottom: -100px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  width: auto;
+  z-index: 2;
+  transition: transform 0.5s;
+  background-color: white;
+  margin-left: 20px;
+}
+
+.card-info p:first-child{
+  font-weight: 600;
+}
+
+.card-info p:last-child{
+  font-weight: 300;
+  color: var(--gray);
+}
+
+.card-container:hover .card-info {
+  transform: translateY(-120px);
+
+}

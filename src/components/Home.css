@@ -1,0 +1,35 @@
+@import url("../components/../global.css");
+
+.hero {
+  margin: 0 auto;
+  width: 60%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 93.6px;
+  letter-spacing: 0.2px;
+  margin-bottom: 2rem;
+}
+
+.title-span {
+  color: var(--red);
+}
+
+.sub-title {
+  font-size: 25px;
+  line-height: 32.5px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.sub-title-span {
+  color: var(--gray);
+}
