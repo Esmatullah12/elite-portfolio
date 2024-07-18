@@ -81,6 +81,9 @@ img {
 
 @media (max-width: 800px) {
   .about {
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 80vh;
     height: auto;
     display: flex;
     flex-direction: column;

@@ -23,7 +23,6 @@ const AboutDetailLeft = () => {
             <FaCaretRight /> Website Desginging
           </li>
           <li>
-            {" "}
             <FaCaretRight /> Database Development
           </li>
         </ul>
@@ -40,9 +39,7 @@ const AboutDetailLeft = () => {
           <h3>Languages Skills</h3>
           <div className="languages">
             <CircleProgress language={"English"} percentage={90} />
-
             <CircleProgress language={"Pashto"} percentage={92} />
-
             <CircleProgress language={"Persian"} percentage={95} />
           </div>
         </div>
