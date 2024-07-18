@@ -1,47 +1,104 @@
-.detail-right{
+.detail-right {
   border-right: 1px dashed var(--gray);
   padding: 1rem;
   width: 40%;
   text-align: center;
 }
 
-.detail-right img{
+.detail-right img {
   width: 40%;
   border-radius: 50%;
 }
 
-.detail-right h2{
+.detail-right h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.detail-right h2 span{
+.detail-right h2 span {
   color: var(--red);
 }
 
-.personal-info{
+.personal-info {
   text-align: left;
 }
 
-.detail-right p{
+.detail-right p {
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 2.5rem;
 }
 
-.info-box{
+.info-box {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.info-box{
-  padding:5px 5px 10px 5px;
+.info-box {
+  padding: 5px 5px 10px 5px;
   border-bottom: 1px dashed var(--gray);
 }
 
-.btn{
+.btn {
   margin-top: 1rem;
 }
 
+@media (max-width: 992px) {
+  .detail-right {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px dashed var(--gray);
+    padding-bottom: 1rem;
+  }
 
+  .detail-right img {
+    width: 30%;
+  }
+
+  .detail-right h2 {
+    font-size: 1.3rem;
+  }
+
+  .personal-info {
+    text-align: center;
+  }
+
+  .info-box {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .detail-right {
+    padding: 0.5rem;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px dashed var(--gray);
+  }
+
+  .detail-right img {
+    width: 50%;
+  }
+
+  .detail-right h2 {
+    font-size: 1.2rem;
+  }
+
+  .detail-right p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-box {
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}

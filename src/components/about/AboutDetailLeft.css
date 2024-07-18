@@ -1,19 +1,19 @@
-
-.about-left{
+.about-left {
+  display: block;
   padding: 30px;
   text-align: left;
   color: white;
   width: 60%;
-  overflow-x: auto;
+  overflow-y: scroll;
 }
 
-.about-left h3{
+.about-left h3 {
   padding-bottom: 1rem;
   border-bottom: 1px dashed var(--gray);
   margin-bottom: 1.8rem;
 }
 
-.about-left p{
+.about-left p {
   text-align: justify;
   font-size: 1rem;
   color: var(--gray);
@@ -23,25 +23,64 @@
   margin-bottom: 2rem;
 }
 
-.qaulity-services{
+.qaulity-services {
   margin-bottom: 2rem;
 }
 
-.programming-language p{
+.programming-language p {
   margin-bottom: 0.5rem;
 }
 
-.qaulity-services ul li{
+.qaulity-services ul li {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
 
-.languages{
+.languages {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.language p{
+.language p {
   text-align: center;
+}
+
+@media (max-width: 992px) {
+  .about-left {
+    width: 100%;
+    overflow-y: scroll;
+  }
+
+  .languages {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-left {
+    overflow-y: scroll;
+    padding: 15px;
+    height: 100%; /* Ensure it takes up the full height */
+  }
+
+  .about-left h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-left p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .languages {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .language p {
+    margin-bottom: 1rem;
+  }
 }
